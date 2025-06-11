@@ -43,7 +43,7 @@ export function FoundersSection() {
     <section id="founders" className="container py-24 space-y-12">
       <div className="flex flex-col items-center text-center space-y-4">
         <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Our Team</div>
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Meet the Founders</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Meet Our Founders</h2>
         <p className="max-w-[700px] text-muted-foreground md:text-xl">
           The visionaries behind VECO, combining expertise in finance, technology, and sustainability.
         </p>
