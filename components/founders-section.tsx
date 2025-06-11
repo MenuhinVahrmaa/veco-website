@@ -52,18 +52,19 @@ export function FoundersSection() {
       <div className="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto">
         {founders.map((founder) => (
           <div key={founder.name} className="relative overflow-hidden rounded-lg border bg-background p-2">
-            <div className="flex items-center justify-center overflow-hidden rounded-md bg-muted aspect-[3/4] w-full">
+            <div className="w-full h-[400px] overflow-hidden rounded-md bg-muted flex items-center justify-center">
               <Image
                 src={founder.image || "/placeholder.svg"}
                 alt={founder.name}
-                fill
-                className="object-cover object-center transition-transform duration-300 group-hover:scale-105 rounded-md"
+                width={300}
+                height={400}
+                className="object-cover object-center rounded-md transition-transform duration-300 group-hover:scale-105"
               />
             </div>
             <div className="p-4">
               <h3 className="font-semibold">{founder.name}</h3>
               <p className="text-sm text-primary">{founder.title}</p>
-              <p className="mt-2 text-sm text-muted-foreground">{founder.bio}</p>
+              <p className="mt-2 text-sm text-foreground leading-relaxed">{founder.bio}</p>
               <div className="mt-4 flex gap-2">
                 <Button variant="ghost" size="icon" asChild className="h-8 w-8 rounded-full">
                   <a href={founder.social.linkedin} aria-label={`${founder.name}'s LinkedIn`}>
