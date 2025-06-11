@@ -51,7 +51,7 @@ export function FoundersSection() {
 
       <div className="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto">
         {founders.map((founder) => (
-          <div key={founder.name} className="group relative overflow-hidden rounded-lg border bg-background p-2">
+          <div key={founder.name} className="relative overflow-hidden rounded-lg border bg-background p-2">
             <div className="flex items-center justify-center overflow-hidden rounded-md bg-muted aspect-[3/4] w-full">
               <Image
                 src={founder.image || "/placeholder.svg"}
