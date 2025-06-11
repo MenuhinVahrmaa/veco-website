@@ -52,13 +52,12 @@ export function FoundersSection() {
       <div className="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto">
         {founders.map((founder) => (
           <div key={founder.name} className="group relative overflow-hidden rounded-lg border bg-background p-2">
-            <div className="w-full h-[400px] overflow-hidden rounded-md bg-muted flex items-center justify-center">
+            <div className="flex items-center justify-center overflow-hidden rounded-md bg-muted aspect-[3/4] w-full">
               <Image
                 src={founder.image || "/placeholder.svg"}
                 alt={founder.name}
-                width={400}
-                height={100}
-                className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                fill
+                className="object-cover object-center transition-transform duration-300 group-hover:scale-105 rounded-md"
               />
             </div>
             <div className="p-4">
